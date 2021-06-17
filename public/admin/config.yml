@@ -9,15 +9,36 @@ collections:
   - name: "pages"
     label: "Pages"
     delete: false
-    files: 
-      - name: 'landingPage'
-        label: 'Landing Page'
+    files:
+      - name: "landingPage"
+        label: "Landing Page"
         file: "content/pages/landing-page.json"
-        description: 'Landing Page Content'
+        description: "Landing Page Content"
         fields:
-          - { label: 'Logo', name: 'logo', widget: 'image' }
-          - { label: 'Title (H1)', name: 'title', widget: 'text' }
-          - { label: 'Subheading', name: 'subTitle', widget: 'text' }
+          - name: "hero"
+            label: "Hero Section"
+            widget: "object"
+            fields:
+              - { label: "Logo", name: "logo", widget: "image" }
+              - { label: "Title (H1)", name: "title", widget: "text" }
+              - { label: "Subheading", name: "subTitle", widget: "text" }
+              - name: "heroLinks"
+                label: "Links"
+                widget: "list"
+                hint: "Group of buttons/links"
+                allow_add: true
+                collapsed: true
+                summary: '{{fields.title}}'
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Link", name: "href", hint: "url address", widget: "string"}
+                  - {label: "Open in new tab", name: "openInNewTab", widget: "boolean"}
+          - name: "contractAddress"
+            label: "Contract Address"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Contract Address", name: "contractAddress", widget: "string"}
   - name: "config"
     label: "Config"
     delete: false
