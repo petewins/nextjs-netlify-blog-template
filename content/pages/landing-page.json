@@ -1,5 +1,31 @@
 {
   "title": "People-Powered Networks.",
   "subTitle": "Powered by the Helium Blockchain, The People’s Network represents a paradigm shift for decentralized wireless infrastructure.",
-  "logo": "/images/pngitem_1245885.png"
+  "logo": "/images/pngitem_1245885.png",
+  "hero": {
+    "logo": "/images/pngitem_1245885.png",
+    "title": "People-Powered Networks.",
+    "subTitle": "Powered by the Helium Blockchain, The People’s Network represents a paradigm shift for decentralized wireless infrastructure.",
+    "heroLinks": [
+      {
+        "openInNewTab": true,
+        "title": "Helium",
+        "href": "https://www.helium.com/"
+      },
+      {
+        "title": "Bitcoin",
+        "href": "https://www.bitcoin.com/",
+        "openInNewTab": true
+      },
+      {
+        "title": "Ethereum",
+        "href": "ethereum.com",
+        "openInNewTab": true
+      }
+    ]
+  },
+  "contractAddress": {
+    "label": "Contract Address",
+    "contractAddress": "0x19B60612F9A93359bca835A788A334D4157E675B"
+  }
 }
