@@ -6,6 +6,18 @@ public_folder: /images
 publish_mode: editorial_workflow
 
 collections:
+  - name: "pages"
+    label: "Pages"
+    delete: false
+    files: 
+      - name: 'landingPage'
+        label: 'Landing Page'
+        file: "content/pages/landing-page.json"
+        description: 'Landing Page Content'
+        fields:
+          - { label: 'Logo', name: 'logo', widget: 'image' }
+          - { label: 'Title (H1)', name: 'title', widget: 'text' }
+          - { label: 'Subheading', name: 'subTitle', widget: 'text' }
   - name: "config"
     label: "Config"
     delete: false
